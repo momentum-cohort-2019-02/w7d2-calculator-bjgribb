@@ -24,12 +24,17 @@ function getDisplay() {
 
 function getAnswer() {
     equal.addEventListener('click', function() {
-        let answer = eval(display.innerText)
-            console.log(answer)
-            display.innerText = ""
-            display.innerText = answer
-            console.log(answer)
-        })
+        try {
+            math.eval(display.innerText)
+        } catch(e) {
+            if (e instanceof SyntaxError) {
+                alert("You just entered hot nonsense, try again...")
+            }
+        }
+        let answer = math.eval(display.innerText)
+        display.innerText = ""
+        display.innerText +=  (answer)
+    })
 }
 
 getDisplay()
