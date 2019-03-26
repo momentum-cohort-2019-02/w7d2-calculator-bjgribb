@@ -1,0 +1,22 @@
+input {
+    width: 3rem;
+}
+
+table {
+    border: solid black 2px;
+    background-color: lightblue;
+    width: 50%;
+    height: 100%;
+    max-width: 300px;
+}
+
+.display {
+    background-color: white;
+    height: 100%;
+    text-align: right;
+    max-height: 50px;
+}
+
+td {
+    text-align: center;
+}
