@@ -33,7 +33,7 @@ function getAnswer() {
         }
         let answer = math.eval(display.innerText)
         display.innerText = ""
-        display.innerText +=  (answer)
+        display.innerText += (answer)
     })
 }
 
